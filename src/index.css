@@ -1,0 +1,24 @@
+.bgGradient {
+  background: linear-gradient(to right, #43414100, #201e1e00);
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 89, 0, 0.04);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e75c2d
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
+
+.bgForm {
+  background-image: url(/public/bgForm.jpg);
+  background-size: cover;
+}

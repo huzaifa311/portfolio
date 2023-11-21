@@ -1,0 +1,13 @@
+.bgH{
+    background-image: url('/public/rainbow.jpeg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.bgForm{
+    background-image: url(/public/bgForm.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
