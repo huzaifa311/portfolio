@@ -18,8 +18,8 @@ const About = () => {
             </Helmet>
             <div className={`md:flex flex-col md:justify-center ${homeClass} md:h-[100vh]`}>
                 <Header isDarkTheme={isDarkTheme} custom2={'text-[#FA6136]'} onClick={toggleTheme} />
-                <h1 className={`pt-24 text-center tracking-wider text-6xl pb-6 font-black animate__animated animate__backInRight ${textClass}`}>About Me</h1>
-                <div className='h-full w-full bg-no-repeat md:bg-contain md:object-contain md:flex md:flex-row flex flex-col md:justify-center md:gap-10 md:place-items-center md:max-w-[1500px] md:mt-12 md:px-[5%] px-2 mb-8'>
+                {/* <h1 className={`pt-24 text-center tracking-wider text-6xl pb-6 font-black animate__animated animate__backInRight ${textClass}`}>About Me</h1> */}
+                <div className='h-full w-full bg-no-repeat md:bg-contain md:object-contain md:flex md:flex-row flex flex-col md:justify-center md:gap-10 md:place-items-center md:max-w-[1500px] md:mt-12 md:px-[5%] px-2 pb-8'>
                     <div>
                         <h1 className={`${textClass} font-bold text-5xl md:mt-2 mt-12 mb-8 animate__animated animate__backInLeft ${textClass}`}>So, Who am I ?</h1>
                         <p className={`md:w-[550px] ${pClass}`}>Hey👋 I'm Huzaifa. I love­ web developme­nt and making digital experience­s interactive and engaging. Te­chnology can change our world for the bette­r. The constant change and growth in web de­velopment excite­s me to no end.</p>

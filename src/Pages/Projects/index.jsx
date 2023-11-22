@@ -54,19 +54,19 @@ const Projects = () => {
         },
 
         {
+            img: './github.jpg',
+            headingF: 'Github Api',
+            headingB: 'Github Api Website',
+            para: 'Github Api Website which shows data of github profiles',
+            hostingUrl: 'https://portfolio-7hapks1kv-huzaifa311.vercel.app/'
+        },
+
+        {
             img: './todo2.jpg',
             headingF: 'Todo Website',
             headingB: 'Todo Website',
             para: 'Todo List via HTML,CSS &Js',
             hostingUrl: 'https://huzaifa311.github.io/todo/'
-        },
-
-        {
-            img: './saylani.jpg',
-            headingF: 'Saylani',
-            headingB: 'Saylani Landing Page',
-            para: 'Saylani Web using Html, Css',
-            hostingUrl: 'https://huzaifa311.github.io/Saylani/'
         },
 
         {
@@ -99,6 +99,14 @@ const Projects = () => {
             headingB: 'FAKE HACKING WEBSITE',
             para: 'HackingPrank Web via HTML,CSS &Js',
             hostingUrl: 'https://huzaifa311.github.io/HackPrank/'
+        },
+
+        {
+            img: './saylani.jpg',
+            headingF: 'Saylani',
+            headingB: 'Saylani Landing Page',
+            para: 'Saylani Web using Html, Css',
+            hostingUrl: 'https://huzaifa311.github.io/Saylani/'
         },
 
         {
