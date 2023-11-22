@@ -17,7 +17,7 @@ const Contact = () => {
             <Helmet>
                 <title>Huzaifa Portfolio - Contact Page</title>
             </Helmet>
-            <div className={`flex flex-row justify-center ${homeClass} h-[100vh]`}>
+            <div className={`flex flex-row justify-center ${homeClass} sm:h-[100vh]`}>
                 <Header custom4={'text-[#FA6136]'} isDarkTheme={isDarkTheme} onClick={toggleTheme} />
                 <div className='max-w-[1500px] mt-24'>
                     <h1 className={`text-center tracking-wider text-6xl pb-6 font-black animate__animated animate__backInRight ${textClass}`} >Contact Me</h1>

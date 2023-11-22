@@ -43,7 +43,7 @@ const Home = () => {
             <Helmet>
                 <title>Huzaifa Portfolio</title>
             </Helmet>
-            <div className={`md:flex md:justify-center h-[100vh] ${homeClass} overflow-hidden`}>
+            <div className={`md:flex md:justify-center sm:h-[100vh] ${homeClass} overflow-hidden`}>
                 <Header isDarkTheme={isDarkTheme} custom1={"text-[#FA6136]"} onClick={toggleTheme} />
                 <div className={`md:mt-5 md:h-[100vh] h-full w-full bg-no-repeat md:bg-contain md:object-contain md:flex md:flex-row flex flex-col md:justify-center md:gap-28 gap-12 md:place-items-center md:max-w-[1500px]`}>
                     <div className="flex flex-row md:flex-col justify-center md:justify-normal place-items-center md:place-items-start">

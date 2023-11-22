@@ -16,7 +16,7 @@ const About = () => {
             <Helmet>
                 <title>Huzaifa Portfolio - About Page</title>
             </Helmet>
-            <div className={`md:flex flex-col md:justify-center ${homeClass} md:h-[100vh]`}>
+            <div className={`md:flex flex-col md:justify-center ${homeClass} sm:h-[100vh]`}>
                 <Header isDarkTheme={isDarkTheme} custom2={'text-[#FA6136]'} onClick={toggleTheme} />
                 <h1 className={`mt-24 text-center tracking-wider text-6xl pb-6 font-black animate__animated animate__backInRight ${textClass}`}>About Me</h1>
                 <div className='h-full w-full bg-no-repeat md:bg-contain md:object-contain md:flex md:flex-row flex flex-col md:justify-center md:gap-10 md:place-items-center md:max-w-[1500px] md:mt-12'>
