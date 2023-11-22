@@ -30,6 +30,22 @@ const Projects = () => {
         },
 
         {
+            img: './immersive.jpg',
+            headingF: 'Immersive Animator',
+            headingB: 'Animator Website',
+            para: 'Clone of Immersive Animator',
+            hostingUrl: 'https://animator-gules.vercel.app/'
+        },
+
+        {
+            img: './portfolio2.jpg',
+            headingF: 'Portfolio Website',
+            headingB: 'Portfolio Website',
+            para: 'Portfolio Website Using React Js',
+            hostingUrl: 'https://portfolio-7hapks1kv-huzaifa311.vercel.app/'
+        },
+
+        {
             img: './ecommerce.jpg',
             headingF: 'Ecommerce',
             headingB: 'Ecommerce Website',
