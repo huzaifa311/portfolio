@@ -4,15 +4,6 @@
 }
 
 .card1 {
-    position: relative;
-    width: 350px;
-    height: 200px;
-    margin: 20px;
-    /* margin-left: 25%; */
-    /* background: blue; */
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
     transition: 0.5s;
 }
 
@@ -149,7 +140,6 @@
     left: 0;
     opacity: 1;
     visibility: visible;
-
 }
 
 .card1:hover .h2 {
@@ -166,7 +156,6 @@
     font-size: 1em;
     margin-bottom: 10px;
     font-weight: 700;
-
 }
 
 .card1 .content p {
@@ -184,8 +173,6 @@
     transition: 0.5s;
     padding-right: 30px;
 }
-
-
 
 @media screen and (max-width: 320px) {
     .card1 {
@@ -286,8 +273,6 @@
         font-weight: bold;
         transition: 0.5s;
     }
-
-
 }
 
 @media screen and (max-width: 376px) and (min-width: 330px) {
@@ -390,6 +375,4 @@
         font-weight: bold;
         transition: 0.5s;
     }
-
-
 }

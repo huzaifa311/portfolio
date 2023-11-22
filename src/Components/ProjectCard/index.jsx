@@ -4,7 +4,7 @@ import './index.css'
 const FlippingCard = ({ img, headingF, headingB,  para, hostingUrl}) => {
     return (
         <>
-            <div className="card1 animate__animated animate__fadeInUpBig">
+            <div className="card1 w-[350px] h-[200px] items-center flex rounded-[20px] m-[20px] relative animate__animated animate__fadeInUpBig">
                 <div className="face front">
                     <img src={img} alt="" />
                         <h3>{headingF}</h3>
