@@ -43,9 +43,9 @@ const Home = () => {
             <Helmet>
                 <title>Huzaifa Portfolio</title>
             </Helmet>
-            <div className={`md:flex md:justify-center sm:h-[100vh] ${homeClass} overflow-hidden`}>
+            <div className={`md:flex md:justify-center md:h-[100vh] ${homeClass} overflow-hidden`}>
                 <Header isDarkTheme={isDarkTheme} custom1={"text-[#FA6136]"} onClick={toggleTheme} />
-                <div className={`md:mt-5 md:h-[100vh] h-full w-full bg-no-repeat md:bg-contain md:object-contain md:flex md:flex-row flex flex-col md:justify-center md:gap-28 gap-12 md:place-items-center md:max-w-[1500px]`}>
+                <div className={`md:mt-5 md:h-[100vh] h-full w-full bg-no-repeat md:bg-contain md:object-contain md:flex md:flex-row flex flex-col md:justify-center md:gap-28 gap-12 md:place-items-center md:max-w-[1500px] md:px-[5%] px-2`}>
                     <div className="flex flex-row md:flex-col justify-center md:justify-normal place-items-center md:place-items-start">
 
                         <motion.img
@@ -71,7 +71,7 @@ const Home = () => {
                         <p className={` mt-8 md:w-[420px]   ${textClass}`}>
                             I'm a beginning Web Developer.I’m presently wanted to being involved in an organization that believes in gaining a competitive edge and giving back to the community.
                         </p>
-                        <div className="flex justify-around mt-8 animate__animated animate__zoomInDown">
+                        <div className="flex justify-around mt-8 animate__animated animate__zoomInDown mb-8">
                             <div className="h-[40px] w-[40px] rounded-full hover:text-black hover:bg-[#FC6731] hover:shadow-2xl hover:shadow-[#FC6731] outline flex justify-center place-items-center text-[#FC6731] outline-gray-300 hover:outline-none">
                                 <a href="https://www.linkedin.com/in/huzaifahabib-923215271" target="_blank">
                                     <LinkedInIcon fontSize="medium" />
