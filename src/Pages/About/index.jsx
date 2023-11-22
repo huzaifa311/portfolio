@@ -24,8 +24,8 @@ const About = () => {
                         <h1 className={`${textClass} font-bold text-5xl md:mt-2 mt-12 mb-8 animate__animated animate__backInLeft ${textClass}`}>So, Who am I ?</h1>
                         <p className={`md:w-[550px] ${pClass}`}>Hey👋 I'm Huzaifa. I love­ web developme­nt and making digital experience­s interactive and engaging. Te­chnology can change our world for the bette­r. The constant change and growth in web de­velopment excite­s me to no end.</p>
                         <p className={`md:w-[550px] my-8 ${pClass}`}>I'm open to collaboration, mentorship, and connecting with fellow developers and industry professionals. Feel free to reach out if you share a passion for technology or if you have a project you'd like to discuss. Let's create something amazing together!</p>
-                        <button href="https://wa.me/+923218901245" target="_blank" className={`bg-[#FA6136] p-3 ${pClass} animate__animated  animate__zoomInDown text-lg rounded-xl `}>
-                            Contact Me
+                        <button className={`bg-[#FA6136] p-3 ${pClass} animate__animated  animate__zoomInDown text-lg rounded-xl `}>
+                            <a href="https://wa.me/+923218901245" target="_blank">Contact Me</a>
                         </button>
                     </div>
                     <div className="flex flex-row md:flex-col justify-center md:justify-normal place-items-center md:place-items-start">
