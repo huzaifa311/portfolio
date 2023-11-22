@@ -3,7 +3,7 @@ import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Link, NavLink } from "react-router-dom";
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 
-const Header = ({ isDarkTheme, custom1, custom2, custom3, custom4, onClick }) => {
+const Header = ({ isDarkTheme, custom1, custom2, custom3, custom4, custom5, onClick }) => {
     let [open, setOpen] = useState(false);
 
     return (
@@ -37,6 +37,14 @@ const Header = ({ isDarkTheme, custom1, custom2, custom3, custom4, onClick }) =>
                             className={` hover:text-[#FA6136] duration-500 ${custom2}`}
                         >
                             About
+                        </NavLink>
+                    </li>
+                    <li className="md:ml-8 md:my-0 my-7 font-semibold text-lg">
+                        <NavLink
+                            to="/skills"
+                            className={` hover:text-[#FA6136] duration-500 ${custom5}`}
+                        >
+                            Skills
                         </NavLink>
                     </li>
                     <li className="md:ml-8 md:my-0 my-7 font-semibold text-lg">
