@@ -66,7 +66,11 @@ const Home = () => {
                             Hi, I'm
                         </h3>
                         <h1 className={`md:text-5xl text-4xl  animate__animated animate__swing font-bold flex gap-2   mt-3 ${textClass} `}>
-                            <p className="text-[#FC6731]">Muhammad</p>Huzaifa
+                            <p className="text-[#FC6731]">Muhammad</p>
+                            <p className="button hover:cursor-default font-semibold" data-text="Awesome">
+                                <span className="actual-text">Huzaifa</span>
+                                <span aria-hidden="true" className="hover-text">Huzaifa</span>
+                            </p>
                         </h1>
                         <p className={` mt-8 md:w-[420px]   ${textClass}`}>
                             I'm a beginning Web Developer.I’m presently wanted to being involved in an organization that believes in gaining a competitive edge and giving back to the community.

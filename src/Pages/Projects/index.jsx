@@ -6,30 +6,6 @@ import { Helmet } from 'react-helmet';
 const Projects = () => {
     const data = [
         {
-            img: './weather.jpg',
-            headingF: 'Weather Web',
-            headingB: 'React Js Weather Web',
-            para: 'Weather Web by React & tailwind.',
-            hostingUrl: 'https://react-weather-alpha-dusky.vercel.app/'
-        },
-
-        {
-            img: './blog.jpg',
-            headingF: 'Blogging',
-            headingB: 'Blogging Website',
-            para: 'Blog App using React, Tailwind & FireBase',
-            hostingUrl: 'https://blog-react-tau.vercel.app/'
-        },
-
-        {
-            img: './portfolio.jpg',
-            headingF: 'Portfolio Website',
-            headingB: 'My Portfolio',
-            para: 'Portfolio Website Using React Js',
-            hostingUrl: 'https://portfolio-react-henna-ten.vercel.app/'
-        },
-
-        {
             img: './immersive.jpg',
             headingF: 'Immersive Animator',
             headingB: 'Animator Website',
@@ -43,6 +19,38 @@ const Projects = () => {
             headingB: 'Portfolio Website',
             para: 'Portfolio Website Using React Js',
             hostingUrl: 'https://portfolio-7hapks1kv-huzaifa311.vercel.app/'
+        },
+
+        {
+            img: './blog.jpg',
+            headingF: 'Blogging',
+            headingB: 'Blogging Website',
+            para: 'Blog App using React, Tailwind & FireBase',
+            hostingUrl: 'https://blog-react-tau.vercel.app/'
+        },
+
+        {
+            img: './logistics.jpg',
+            headingF: 'Logistics Website',
+            headingB: 'Logistics Web Landing Page',
+            para: 'Logistics Website Using React Js',
+            hostingUrl: 'https://logisticsweb-huzaifa311.vercel.app/'
+        },
+
+        {
+            img: './portfolio.jpg',
+            headingF: 'Portfolio Website',
+            headingB: 'My Portfolio',
+            para: 'Portfolio Website Using React Js',
+            hostingUrl: 'https://portfolio-react-henna-ten.vercel.app/'
+        },
+
+        {
+            img: './weather.jpg',
+            headingF: 'Weather Web',
+            headingB: 'React Js Weather Web',
+            para: 'Weather Web by React & tailwind.',
+            hostingUrl: 'https://react-weather-alpha-dusky.vercel.app/'
         },
 
         {
@@ -62,11 +70,11 @@ const Projects = () => {
         },
 
         {
-            img: './todo2.jpg',
-            headingF: 'Todo Website',
-            headingB: 'Todo Website',
-            para: 'Todo List via HTML,CSS &Js',
-            hostingUrl: 'https://huzaifa311.github.io/todo/'
+            img: './todo.jpg',
+            headingF: 'REACT TODO',
+            headingB: 'REACT TODO',
+            para: 'TODO WEBSITE USING REACTJS',
+            hostingUrl: "https://todo-react-red-ten.vercel.app/"
         },
 
         {
@@ -86,14 +94,6 @@ const Projects = () => {
         },
 
         {
-            img: './food.jpg',
-            headingF: 'Food-Panda',
-            headingB: 'Food-Panda Landing Page',
-            para: 'Food-Panda Clone via HTML, CSS & Js',
-            hostingUrl: 'https://huzaifa311.github.io/FoodPanda/'
-        },
-
-        {
             img: './hack.jpg',
             headingF: 'Hacking Prank',
             headingB: 'FAKE HACKING WEBSITE',
@@ -102,19 +102,27 @@ const Projects = () => {
         },
 
         {
+            img: './food.jpg',
+            headingF: 'Food-Panda',
+            headingB: 'Food-Panda Landing Page',
+            para: 'Food-Panda Clone via HTML, CSS & Js',
+            hostingUrl: 'https://huzaifa311.github.io/FoodPanda/'
+        },
+
+        {
+            img: './todo2.jpg',
+            headingF: 'Todo Website',
+            headingB: 'Todo Website',
+            para: 'Todo List via HTML,CSS &Js',
+            hostingUrl: 'https://huzaifa311.github.io/todo/'
+        },
+
+        {
             img: './saylani.jpg',
             headingF: 'Saylani',
             headingB: 'Saylani Landing Page',
             para: 'Saylani Web using Html, Css',
             hostingUrl: 'https://huzaifa311.github.io/Saylani/'
-        },
-
-        {
-            img: './todo.jpg',
-            headingF: 'REACT TODO',
-            headingB: 'REACT TODO',
-            para: 'TODO WEBSITE USING REACTJS',
-            hostingUrl: "https://todo-react-red-ten.vercel.app/"
         },
 
         {
