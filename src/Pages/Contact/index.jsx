@@ -3,6 +3,7 @@ import { Header } from '../../Components';
 import { Helmet } from 'react-helmet';
 import styles from './index.module.css'
 import '../../index.css'
+import Swal from 'sweetalert2';
 
 const Contact = () => {
     const [isDarkTheme, setDarkTheme] = useState(false);
@@ -12,6 +13,13 @@ const Contact = () => {
     const textClass = isDarkTheme ? "text-black " : styles.bgH;
     const homeClass = isDarkTheme ? "bg-white" : "bg-[#202430]";
     const pClass = isDarkTheme ? "text-black" : "text-white";
+    const kug = e => {
+        e.preventDefault()
+        Swal.fire("It's just a frontend UI, No database or backend in it. You can contact me on whatsapp ");
+        setTimeout(() => {
+            window.open('https://wa.me/+923218901245', '_blank')
+        }, 2000)
+    }
     return (
         <>
             <Helmet>
@@ -26,7 +34,7 @@ const Contact = () => {
                         <input type="text" name="" id="" className={`mt-10 bg-transparent border-b-2 outline-none pb-5 ${pClass}  placeholder`} placeholder='Email *' />
                         <input type="text" name="" id="" className={`mt-10 bg-transparent border-b-2 outline-none pb-5 ${pClass}  placeholder`} placeholder='Subject *' />
                         <textarea type="text" name="" id="" className={`${pClass} mt-10 bg-transparent border-b-2 outline-none pb-5 text-white  placeholder`} placeholder='Message *' />
-                        <button className='text-lg mt-10 bg-[#FA6136] hover:bg-[#87331b] text-white font-bold py-2 px-4 rounded'>Send Message</button>
+                        <button className='text-lg mt-10 bg-[#FA6136] hover:bg-[#87331b] text-white font-bold py-2 px-4 rounded' onClick={kug}>Send Message</button>
                     </form>
                 </div>
             </div>
