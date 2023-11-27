@@ -32,8 +32,8 @@ const About = () => {
                         <div className='flex justify-between'>
                             <button className={`${styles.btn}`} onClick={redirectWhatsapp}>Contact Me</button>
                             <div className="flex animate__animated animate__fadeInRightBig">
-                                <button className="transition duration-500 border-0 h-16  min-w-36 bg-[#b74526] hover:bg-[#b13918] text-white mt-2 px-3 rounded-md">
-                                    <a href={cv} download><i className="fas fa-download animate__animated hover:animate-bounce hover:transition pr-4"></i></a>
+                                <button className="transition duration-500 border-0 h-16  min-w-36 bg-[#b13918] text-white mt-2 px-3 rounded-md">
+                                    <a href={cv} download><i className="fas fa-download animate__animated animate-bounce transition pr-4"></i></a>
                                     <span className='text-[20px] font-semibold'>Download CV</span>
                                 </button>
                             </div>
