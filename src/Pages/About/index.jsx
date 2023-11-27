@@ -31,7 +31,7 @@ const About = () => {
                         <p className={`md:w-[550px] my-8 ${pClass}`}>I'm open to collaboration, mentorship, and connecting with fellow developers and industry professionals. Feel free to reach out if you share a passion for technology or if you have a project you'd like to discuss. Let's create something amazing together!</p>
                         <div className='flex justify-between'>
                             <button className={`${styles.btn}`} onClick={redirectWhatsapp}>Contact Me</button>
-                            <div className="flex">
+                            <div className="flex animate__animated animate__fadeInRightBig">
                                 <button className="transition duration-500 border-0 h-16  min-w-36 bg-[#b74526] hover:bg-[#b13918] text-white mt-2 px-3 rounded-md">
                                     <a href={cv} download><i className="fas fa-download animate__animated hover:animate-bounce hover:transition pr-4"></i></a>
                                     <span className='text-[20px] font-semibold'>Download CV</span>
