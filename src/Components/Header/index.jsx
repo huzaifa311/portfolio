@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Link, NavLink } from "react-router-dom";
-import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 const Header = ({ isDarkTheme, custom1, custom2, custom3, custom4, custom5, onClick }) => {
     let [open, setOpen] = useState(false);

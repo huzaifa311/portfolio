@@ -3,6 +3,8 @@ import { Header } from '../../Components';
 import { motion } from "framer-motion";
 import styles from './index.module.css'
 import { Helmet } from 'react-helmet';
+import cv from "../../docs/Huzaifa's Resume.pdf"
+
 const About = () => {
     const [isDarkTheme, setDarkTheme] = useState(false);
     const toggleTheme = () => {
@@ -11,7 +13,7 @@ const About = () => {
     const textClass = isDarkTheme ? "text-black " : styles.bgH;
     const pClass = isDarkTheme ? "text-black" : "text-white";
     const homeClass = isDarkTheme ? "bg-white" : "bg-[#202430]";
-    const redirectWhatsapp = ()=>{
+    const redirectWhatsapp = () => {
         window.open('https://wa.me/+923218901245', '_blank')
     }
     return (
@@ -27,7 +29,15 @@ const About = () => {
                         <h1 className={`${textClass} font-bold text-5xl md:mt-2 mt-12 mb-8 animate__animated animate__backInLeft ${textClass}`}>So, Who am I ?</h1>
                         <p className={`md:w-[550px] ${pClass}`}>Hey👋 I'm Huzaifa. I love­ web developme­nt and making digital experience­s interactive and engaging. Te­chnology can change our world for the bette­r. The constant change and growth in web de­velopment excite­s me to no end.</p>
                         <p className={`md:w-[550px] my-8 ${pClass}`}>I'm open to collaboration, mentorship, and connecting with fellow developers and industry professionals. Feel free to reach out if you share a passion for technology or if you have a project you'd like to discuss. Let's create something amazing together!</p>
-                        <button className={`${styles.btn}`} onClick={redirectWhatsapp}>Contact Me</button>
+                        <div className='flex justify-between'>
+                            <button className={`${styles.btn}`} onClick={redirectWhatsapp}>Contact Me</button>
+                            <div className="flex">
+                                <button className="transition duration-500 border-0 h-16  min-w-36 bg-[#b74526] hover:bg-[#b13918] text-white mt-2 px-3 rounded-md">
+                                    <a href={cv} download><i className="fas fa-download animate__animated hover:animate-bounce hover:transition pr-4"></i></a>
+                                    <span className='text-[20px] font-semibold'>Download CV</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                     <div className="flex flex-row md:flex-col justify-center md:justify-normal place-items-center md:place-items-start">
                         <motion.img
