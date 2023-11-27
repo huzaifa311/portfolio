@@ -6,7 +6,9 @@ const FlippingCard = ({ img, headingF, headingB,  para, hostingUrl}) => {
         <>
             <div className="card1 w-[350px] h-[200px] items-center flex rounded-[20px] m-[20px] relative animate__animated animate__fadeInUpBig">
                 <div className="face front">
-                    <img src={img} alt="" />
+                    <video autoPlay muted loop>
+                        <source src={img} />
+                    </video>
                         <h3>{headingF}</h3>
                 </div>
                 <div className="face back">
