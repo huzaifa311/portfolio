@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FlippingCard, Header } from '../../Components'
+import { FlippingCard, Header, NativeCard } from '../../Components'
 import { Box, Grid } from '@mui/material';
 import styles from './index.module.css'
 import { Helmet } from 'react-helmet';
@@ -159,6 +159,7 @@ const Projects = () => {
                     {/* <Box className="px-5 my-5"> */}
                     {/* <Grid container columnSpacing={2} rowSpacing={2}> */}
                     <div className='flex flex-wrap justify-around'>
+                        <NativeCard img={'https://firebasestorage.googleapis.com/v0/b/react-blog-42ef4.appspot.com/o/Android%20Emulator%20-%20Pixel_7_Pro_API_30_5554%202023-12-01%2000-12-37.mp4?alt=media&token=2f73b35d-b006-4cb7-9474-7815214383be'} headingF={'React Native Instagram Clone'} headingB={'Instagram Clone in React Native'} />
                         {data.map((data, index) => {
                             return <FlippingCard key={index} img={data.img} headingF={data.headingF} headingB={data.headingB} para={data.para} hostingUrl={data.hostingUrl} />
                         })}
