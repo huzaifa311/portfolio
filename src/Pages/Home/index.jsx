@@ -1,25 +1,3 @@
-{/* import React from 'react'
-import { Header } from '../../Components'
-
-const Home = () => {
-  return (
-    <div className='flex flex-row justify-center place-items-center'>
-      <Header custom1={'text-[#FA6136] '}/>
-      <div className="max-w-[1500px] px-[5%]">
-        <div className="flex w-full h-[100vh] gap-10 bg-[#1D262F]">
-            <div className='bg-yellow-300'>
-                <img src="huzaifa.png" alt="huzaifa" className='w-40 h-40' />
-            </div>
-            <div className='text-white bg-red-400'>
-                ugmjuyhfujyfujygfugi
-            </div>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-export default Home */}
 import React, { useState } from "react";
 import "../../index.css";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -30,6 +8,7 @@ import { motion } from "framer-motion";
 import { Header } from '../../Components'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Helmet } from "react-helmet";
+import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
     const [isDarkTheme, setDarkTheme] = useState(false);
@@ -72,7 +51,24 @@ const Home = () => {
                                 <span aria-hidden="true" className="hover-text">Huzaifa</span>
                             </p>
                         </h1>
-                        <p className={` mt-8 md:w-[420px]   ${textClass}`}>
+                        <span className="flex items-center my-4 ">
+                            <p className={`${textClass} text-2xl`}>I Am Passionate </p>
+                            <TypeAnimation className="ml-2 text-lg text-[#FC6731]"
+                                sequence={[
+                                    // Same substring at the start will only be typed once, initially
+                                    'MERN STACK Developer',
+                                    1000,
+                                    'FRONTEND Developer',
+                                    1000,
+                                    'BACKEND Developer',
+                                    1000,
+                                ]}
+                                speed={50}
+                                style={{ fontSize: '2em' }}
+                                repeat={Infinity}
+                            />
+                        </span>
+                        <p className={`md:w-[420px]   ${textClass}`}>
                             I'm a beginning Web Developer.I’m presently wanted to being involved in an organization that believes in gaining a competitive edge and giving back to the community.
                         </p>
                         <div className="flex justify-around mt-8 animate__animated animate__zoomInDown mb-8">
