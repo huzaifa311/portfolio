@@ -53,10 +53,10 @@ const Skills = () => {
             <Helmet>
                 <title>Huzaifa Portfolio - Skills Page</title>
             </Helmet>
-            <div className={`md:flex flex-col md:justify-center ${homeClass} max-w-[1500px] px-[5%] md:h-[100vh]`}>
+            <div className={`md:flex flex-col md:justify-center ${homeClass} max-w-[100wh] px-[5%] md:h-[100vh]`}>
                 <Header isDarkTheme={isDarkTheme} custom5={'text-[#FA6136]'} onClick={toggleTheme} />
                 <h1 className={` pt-32 text-center tracking-wider text-6xl font-black animate__animated animate__backInRight ${textClass}`}>What I do ?</h1>
-                <div className='mt-16 h-full w-full bg-no-repeat md:bg-contain md:object-contain md:flex md:flex-row flex flex-col md:justify-center md:gap-36 md:place-items-center md:max-w-[1500px] '>
+                <div className='mt-16 h-full w-full bg-no-repeat md:bg-contain md:object-contain md:flex md:flex-row flex flex-col md:justify-center md:gap-36 md:place-items-center md:max-w-[100wh] '>
                     <div className="flex flex-row md:flex-col justify-center md:justify-normal place-items-center md:place-items-start">
                         <motion.img
                             initial={{ x: 5, y: 10 }}

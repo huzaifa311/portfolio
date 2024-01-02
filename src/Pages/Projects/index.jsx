@@ -180,11 +180,11 @@ const Projects = () => {
             </Helmet>
             <div className={`md:flex md:justify-center ${homeClass}`}>
                 <Header custom3={'text-[#FA6136]'} onClick={toggleTheme} />
-                <div className='max-w-[1500px] pt-24'>
-                    <h1 className={`text-center tracking-wider text-6xl pb-6 font-black animate__animated animate__backInRight ${textClass}`} >Projects</h1>
+                <div className='w-[100wh] pt-24'>
+                    <h1 className={`text-center tracking-wider text-6xl py-8 font-black animate__animated animate__backInRight ${textClass}`} >Projects</h1>
                     {/* <Box className="px-5 my-5"> */}
                     {/* <Grid container columnSpacing={2} rowSpacing={2}> */}
-                    <div className='flex flex-wrap justify-around'>
+                    <div className='flex flex-wrap justify-around xl:gap-11 xl:px-8'>
                         <NativeCard img={'https://firebasestorage.googleapis.com/v0/b/react-blog-42ef4.appspot.com/o/Android%20Emulator%20-%20Pixel_7_Pro_API_30_5554%202023-12-01%2000-12-37.mp4?alt=media&token=2f73b35d-b006-4cb7-9474-7815214383be'} headingF={'React Native Instagram Clone'} headingB={'Instagram Clone in React Native'} />
                         {data.map((data, index) => {
                             return <FlippingCard key={index} img={data.img} headingF={data.headingF} headingB={data.headingB} para={data.para} hostingUrl={data.hostingUrl} sourceCode={data.sourceCode} />
