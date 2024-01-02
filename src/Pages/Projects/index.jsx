@@ -6,11 +6,21 @@ import { Helmet } from 'react-helmet';
 const Projects = () => {
     const data = [
         {
+            img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1704184820/wf9rcrhseq1lbf0fqim8.mp4',
+            headingF: 'Whatsapp Mern',
+            headingB: 'Whatsapp Clone',
+            para: 'Clone of WhatsApp in MERN Stack',
+            hostingUrl: 'https://frontend-whatsapp-huzaifa311.vercel.app/',
+            sourceCode: 'https://github.com/huzaifa311/FrontendWhatsapp'
+        },
+
+        {
             img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1701103491/xcgojr60jkuddhp1ixo4.mp4',
             headingF: 'Immersive Animator',
             headingB: 'Animator Website',
             para: 'Clone of Immersive Animator',
-            hostingUrl: 'https://animator-gules.vercel.app/'
+            hostingUrl: 'https://animator-gules.vercel.app/',
+            sourceCode: 'https://github.com/huzaifa311/animator'
         },
 
         {
@@ -18,7 +28,8 @@ const Projects = () => {
             headingF: 'Portfolio Website',
             headingB: 'Portfolio Website',
             para: 'Portfolio Website Using React Js',
-            hostingUrl: 'https://portfolio-huzaifa311.vercel.app/'
+            hostingUrl: 'https://portfolio-huzaifa311.vercel.app/',
+            sourceCode: "https://github.com/huzaifa311/portfolio"
         },
 
         {
@@ -26,7 +37,8 @@ const Projects = () => {
             headingF: 'Blogging',
             headingB: 'Blogging Website',
             para: 'Blog App using React, Tailwind & FireBase',
-            hostingUrl: 'https://blog-react-tau.vercel.app/'
+            hostingUrl: 'https://blog-react-tau.vercel.app/',
+            sourceCode: "https://github.com/huzaifa311/Blog-React"
         },
 
         {
@@ -34,7 +46,8 @@ const Projects = () => {
             headingF: 'Logistics Website',
             headingB: 'Logistics Web Landing Page',
             para: 'Logistics Website Using React Js',
-            hostingUrl: 'https://logisticsweb-huzaifa311.vercel.app/'
+            hostingUrl: 'https://logisticsweb-huzaifa311.vercel.app/',
+            sourceCode: "https://github.com/huzaifa311/LogisticsWeb"
         },
 
         {
@@ -42,7 +55,8 @@ const Projects = () => {
             headingF: 'Portfolio Website',
             headingB: 'My Portfolio',
             para: 'Portfolio Website Using React Js',
-            hostingUrl: 'https://portfolio-react-henna-ten.vercel.app/'
+            hostingUrl: 'https://portfolio-react-henna-ten.vercel.app/',
+            sourceCode: "https://github.com/huzaifa311/Portfolio-React"
         },
 
         {
@@ -50,7 +64,8 @@ const Projects = () => {
             headingF: 'Weather Web',
             headingB: 'React Js Weather Web',
             para: 'Weather Web by React & tailwind.',
-            hostingUrl: 'https://react-weather-alpha-dusky.vercel.app/'
+            hostingUrl: 'https://react-weather-alpha-dusky.vercel.app/',
+            sourceCode: "https://github.com/huzaifa311/reactWeather"
         },
 
         {
@@ -58,7 +73,8 @@ const Projects = () => {
             headingF: 'Ecommerce',
             headingB: 'Ecommerce Website',
             para: 'Ecommerce WEBSITE USING REACTJS',
-            hostingUrl: 'https://ecommerce-react-plum.vercel.app/'
+            hostingUrl: 'https://ecommerce-react-plum.vercel.app/',
+            sourceCode: "https://github.com/huzaifa311/EcommerceReact"
         },
 
         {
@@ -66,7 +82,8 @@ const Projects = () => {
             headingF: 'Github Api',
             headingB: 'Github Api Website',
             para: 'Github Api Website which shows data of github profiles',
-            hostingUrl: 'https://github-api-ruby.vercel.app/'
+            hostingUrl: 'https://github-api-ruby.vercel.app/',
+            sourceCode: "https://github.com/huzaifa311/Github-API"
         },
 
         {
@@ -74,7 +91,8 @@ const Projects = () => {
             headingF: 'REACT TODO',
             headingB: 'REACT TODO',
             para: 'TODO WEBSITE USING REACTJS',
-            hostingUrl: "https://todo-react-red-ten.vercel.app/"
+            hostingUrl: "https://todo-react-red-ten.vercel.app/",
+            sourceCode: "https://github.com/huzaifa311/todoReact"
         },
 
         {
@@ -82,7 +100,8 @@ const Projects = () => {
             headingF: 'Calculator Website',
             headingB: 'Calculator',
             para: 'Fully Functional Calculator.',
-            hostingUrl: 'https://huzaifa311.github.io/calculator/'
+            hostingUrl: 'https://huzaifa311.github.io/calculator/',
+            sourceCode: "https://github.com/huzaifa311/calculator"
         },
 
         {
@@ -90,7 +109,8 @@ const Projects = () => {
             headingF: 'Digital Clock',
             headingB: 'Digital Clock Website',
             para: 'DigitalClockWebsite via HTML,CSS &Js',
-            hostingUrl: 'https://huzaifa311.github.io/DigitalClock/'
+            hostingUrl: 'https://huzaifa311.github.io/DigitalClock/',
+            sourceCode: "https://github.com/huzaifa311/DigitalClock"
         },
 
         {
@@ -98,7 +118,8 @@ const Projects = () => {
             headingF: 'Hacking Prank',
             headingB: 'FAKE HACKING WEBSITE',
             para: 'HackingPrank Web via HTML,CSS &Js',
-            hostingUrl: 'https://huzaifa311.github.io/HackPrank/'
+            hostingUrl: 'https://huzaifa311.github.io/HackPrank/',
+            sourceCode: "https://github.com/huzaifa311/HackPrank"
         },
 
         {
@@ -106,7 +127,8 @@ const Projects = () => {
             headingF: 'Food-Panda',
             headingB: 'Food-Panda Landing Page',
             para: 'Food-Panda Clone via HTML, CSS & Js',
-            hostingUrl: 'https://huzaifa311.github.io/FoodPanda/'
+            hostingUrl: 'https://huzaifa311.github.io/FoodPanda/',
+            sourceCode: "https://github.com/huzaifa311/FoodPanda"
         },
 
         {
@@ -114,7 +136,8 @@ const Projects = () => {
             headingF: 'Stop Watch',
             headingB: 'Stop Watch Web',
             para: 'Stop Watch Web via HTML, CSS & Js',
-            hostingUrl: 'https://huzaifa311.github.io/Stop-Watch/'
+            hostingUrl: 'https://huzaifa311.github.io/Stop-Watch/',
+            sourceCode: "https://github.com/huzaifa311/Stop-Watch"
         },
 
         {
@@ -122,7 +145,8 @@ const Projects = () => {
             headingF: 'Todo Website',
             headingB: 'Todo Website',
             para: 'Todo List via HTML,CSS &Js',
-            hostingUrl: 'https://huzaifa311.github.io/todo/'
+            hostingUrl: 'https://github.com/huzaifa311/todoList',
+            sourceCode: ""
         },
 
         {
@@ -130,7 +154,8 @@ const Projects = () => {
             headingF: 'Saylani',
             headingB: 'Saylani Landing Page',
             para: 'Saylani Web using Html, Css',
-            hostingUrl: 'https://huzaifa311.github.io/Saylani/'
+            hostingUrl: 'https://huzaifa311.github.io/Saylani/',
+            sourceCode: "https://github.com/huzaifa311/Saylani"
         },
 
         {
@@ -138,7 +163,8 @@ const Projects = () => {
             headingF: 'Tour Website',
             headingB: 'Tour Website',
             para: 'Tour Website via HTML & CSS',
-            hostingUrl: "https://huzaifa311.github.io/TripAdvisor/"
+            hostingUrl: "https://huzaifa311.github.io/TripAdvisor/",
+            sourceCode: "https://github.com/huzaifa311/TripAdvisor"
         },
     ]
     const [isDarkTheme, setDarkTheme] = useState(false);
@@ -161,7 +187,7 @@ const Projects = () => {
                     <div className='flex flex-wrap justify-around'>
                         <NativeCard img={'https://firebasestorage.googleapis.com/v0/b/react-blog-42ef4.appspot.com/o/Android%20Emulator%20-%20Pixel_7_Pro_API_30_5554%202023-12-01%2000-12-37.mp4?alt=media&token=2f73b35d-b006-4cb7-9474-7815214383be'} headingF={'React Native Instagram Clone'} headingB={'Instagram Clone in React Native'} />
                         {data.map((data, index) => {
-                            return <FlippingCard key={index} img={data.img} headingF={data.headingF} headingB={data.headingB} para={data.para} hostingUrl={data.hostingUrl} />
+                            return <FlippingCard key={index} img={data.img} headingF={data.headingF} headingB={data.headingB} para={data.para} hostingUrl={data.hostingUrl} sourceCode={data.sourceCode} />
                         })}
                     </div>
                     {/* </Grid> */}

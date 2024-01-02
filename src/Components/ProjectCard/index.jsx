@@ -1,7 +1,7 @@
 import React from "react";
 import './index.css'
 
-const FlippingCard = ({ img, headingF, headingB,  para, hostingUrl}) => {
+const FlippingCard = ({ img, headingF, headingB,  para, hostingUrl, sourceCode}) => {
     return (
         <>
             <div className="card1 w-[350px] h-[200px] items-center flex rounded-[20px] m-[20px] relative animate__animated animate__fadeInUpBig">
@@ -14,8 +14,9 @@ const FlippingCard = ({ img, headingF, headingB,  para, hostingUrl}) => {
                 <div className="face back">
                     <h3>{headingB} </h3>
                     <p>{para}</p>
-                    <div className="link">
+                    <div className="link flex justify-around cursor-pointer">
                         <a href={hostingUrl} target="_blank">Go to Web</a>
+                        <a href={sourceCode} target="_blank">{"</>"} Source Code</a>
                     </div>
                 </div>
             </div>

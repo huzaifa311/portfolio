@@ -17,6 +17,7 @@ const Home = () => {
     };
     const textClass = isDarkTheme ? "text-black" : "text-white";
     const homeClass = isDarkTheme ? "bg-white" : "bg-[#202430]";
+    
     return (
         <>
             <Helmet>
