@@ -189,7 +189,7 @@ const Projects = () => {
             </Helmet>
             <div className={`md:flex md:justify-center ${homeClass}`}>
                 <Header custom3={'text-[#FA6136]'} onClick={toggleTheme} />
-                <div className='w-[100wh] pt-24'>
+                <div className='max-w-[1800px] pt-24'>
                     <h1 className={`text-center tracking-wider text-6xl py-8 font-black animate__animated animate__backInRight ${textClass}`} >Projects</h1>
                     {/* <Box className="px-5 my-5"> */}
                     {/* <Grid container columnSpacing={2} rowSpacing={2}> */}

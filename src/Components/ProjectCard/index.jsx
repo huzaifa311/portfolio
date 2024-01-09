@@ -16,7 +16,7 @@ const FlippingCard = ({ img, headingF, headingB,  para, hostingUrl, sourceCode})
                     <p>{para}</p>
                     <div className="link flex justify-around cursor-pointer">
                         <a href={hostingUrl} target="_blank">Go to Web</a>
-                        <a href={sourceCode} target="_blank">{"</>"} Source Code</a>
+                        {/* <a href={sourceCode} target="_blank">{"</>"} Source Code</a> */}
                     </div>
                 </div>
             </div>
