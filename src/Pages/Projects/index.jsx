@@ -6,6 +6,15 @@ import { Helmet } from 'react-helmet';
 const Projects = () => {
     const data = [
         {
+            img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1704819597/c8ppifc3raw6xfxhflnm.mp4',
+            headingF: 'Amazon Clone',
+            headingB: 'MERN Amazon Clone',
+            para: 'Clone of WhaAmazon in MERN Stack & Stripe',
+            hostingUrl: 'https://frontend-whatsapp-huzaifa311.vercel.app/',
+            sourceCode: 'https://github.com/huzaifa311/FrontendWhatsapp'
+        },
+
+        {
             img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1704184820/wf9rcrhseq1lbf0fqim8.mp4',
             headingF: 'Whatsapp Mern',
             headingB: 'Whatsapp Clone',
