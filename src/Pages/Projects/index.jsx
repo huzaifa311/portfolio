@@ -19,7 +19,7 @@ const Projects = () => {
             headingF: 'Amazon Clone',
             headingB: 'MERN Amazon Clone',
             para: 'Clone of WhaAmazon in MERN Stack & Stripe',
-            hostingUrl: 'https://frontend-whatsapp-huzaifa311.vercel.app/',
+            hostingUrl: 'https://amazon-774l.vercel.app/',
             sourceCode: 'https://github.com/huzaifa311/FrontendWhatsapp'
         },
         {
