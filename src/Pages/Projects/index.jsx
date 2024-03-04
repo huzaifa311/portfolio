@@ -5,6 +5,25 @@ import styles from './index.module.css'
 import { Helmet } from 'react-helmet';
 const Projects = () => {
 
+    const clientProjects = [
+        {
+            img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1709595480/a8sef1rvwnobxus2vch8.mp4',
+            headingF: 'AI Website',
+            headingB: 'Toolbelts Website',
+            para: 'Client Projects',
+            hostingUrl: 'https://ai-website-rosy.vercel.app/',
+            // sourceCode: 'https://github.com/huzaifa311/FrontendWhatsapp'
+        },
+        {
+            img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1709594909/Safe_Behavioral_DNA_Prueba_de_seguridad_laboral_-_Google_Chrome_2024-03-05_04-24-01_quphvd.mp4',
+            headingF: 'SDBNA Website',
+            headingB: 'Safe Behavorial DNA',
+            para: 'Client Projects',
+            hostingUrl: 'https://safety-espanol-main.vercel.app/',
+            // sourceCode: 'https://github.com/huzaifa311/FrontendWhatsapp'
+        },
+    ]
+
     const mernProjects = [
         {
             img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1706178590/youtube_htdhnw.mp4',
@@ -195,6 +214,7 @@ const Projects = () => {
     };
     const homeClass = isDarkTheme ? "bg-white" : "bg-[#202430]";
     const textClass = isDarkTheme ? "text-black " : styles.bgH;
+    const subHeading = isDarkTheme ? "text-black md:pl-20 md:w-screen text-4xl font-semibold" : "text-white md:pl-20 md:w-screen text-4xl font-semibold"
     return (
         <>
             <Helmet>
@@ -206,17 +226,21 @@ const Projects = () => {
                     <h1 className={`text-center tracking-wider text-6xl py-8 font-black animate__animated animate__backInRight ${textClass}`} >Projects</h1>
                     {/* <Box className="px-5 my-5"> */}
                     {/* <Grid container columnSpacing={2} rowSpacing={2}> */}
-                    <h1 className={`text-white md:pl-20 md:w-screen text-4xl font-semibold `}>Mern Projects</h1>
+                    <h1 className={`${subHeading} `}>Client Projects</h1>
+                    <div className='flex flex-wrap justify-around xl:gap-11 xl:px-8'>
+                        {clientProjects.map((project, i) => <FlippingCard key={i} project={project} />)}
+                    </div>
+                    <h1 className={`${subHeading} `}>Mern Projects</h1>
                     <div className='flex flex-wrap justify-around xl:gap-11 xl:px-8'>
                         {mernProjects.map((project, i) => <FlippingCard key={i} project={project} />)}
                     </div>
-                    <h1 className={`text-white md:pl-20 md:w-screen text-4xl font-semibold mt-10`}>React Projects</h1>
+                    <h1 className={`${subHeading} mt-10`}>React Projects</h1>
                     <div className='flex flex-wrap justify-around xl:gap-11 xl:px-8'>
                         {reactProjects.map((project, i) => <FlippingCard key={i} project={project} />)}
                     </div>
                     <h1 className={`text-white md:pl-16 md:w-screen text-4xl font-semibold mt-10`}>React Native Projects</h1>
                     <NativeCard img={'https://firebasestorage.googleapis.com/v0/b/react-blog-42ef4.appspot.com/o/Android%20Emulator%20-%20Pixel_7_Pro_API_30_5554%202023-12-01%2000-12-37.mp4?alt=media&token=2f73b35d-b006-4cb7-9474-7815214383be'} headingF={'React Native Instagram Clone'} headingB={'Instagram Clone in React Native'} />
-                    <h1 className={`text-white md:pl-20 md:w-screen text-4xl font-semibold mt-10`}>HTML, CSS & Javascript</h1>
+                    <h1 className={`${subHeading} mt-10`}>HTML, CSS & Javascript</h1>
                     <div className='flex flex-wrap justify-around xl:gap-11 xl:px-8'>
                         {htmlCssJs.map((project, i) => <FlippingCard key={i} project={project} />)}
                     </div>
