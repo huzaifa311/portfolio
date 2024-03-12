@@ -12,7 +12,7 @@ const About = () => {
     };
     const textClass = isDarkTheme ? "text-black " : styles.bgH;
     const pClass = isDarkTheme ? "text-black" : "text-white";
-    const homeClass = isDarkTheme ? "bg-white" : "bg-[#202430]";
+    const homeClass = isDarkTheme ? "light" : "wrapper";
     const redirectWhatsapp = () => {
         window.open('https://wa.me/+923218901245', '_blank')
     }

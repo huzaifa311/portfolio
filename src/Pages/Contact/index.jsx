@@ -11,7 +11,7 @@ const Contact = () => {
         setDarkTheme(!isDarkTheme);
     };
     const textClass = isDarkTheme ? "text-black " : styles.bgH;
-    const homeClass = isDarkTheme ? "bg-white" : "bg-[#202430]";
+    const homeClass = isDarkTheme ? "light" : "wrapper";
     const pClass = isDarkTheme ? "text-black" : "text-white";
     const kug = e => {
         e.preventDefault()

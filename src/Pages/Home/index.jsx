@@ -16,7 +16,7 @@ const Home = () => {
         setDarkTheme(!isDarkTheme);
     };
     const textClass = isDarkTheme ? "text-black" : "text-white";
-    const homeClass = isDarkTheme ? "bg-white" : "bg-[#202430]";
+    const homeClass = isDarkTheme ? "light" : "wrapper";
     
     return (
         <>

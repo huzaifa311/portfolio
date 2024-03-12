@@ -212,7 +212,7 @@ const Projects = () => {
     const toggleTheme = () => {
         setDarkTheme(!isDarkTheme);
     };
-    const homeClass = isDarkTheme ? "bg-white" : "bg-[#202430]";
+    const homeClass = isDarkTheme ? "light" : "wrapper";
     const textClass = isDarkTheme ? "text-black " : styles.bgH;
     const subHeading = isDarkTheme ? "text-black md:pl-20 md:w-screen text-4xl font-semibold" : "text-white md:pl-20 md:w-screen text-4xl font-semibold"
     return (
