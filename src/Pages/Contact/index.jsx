@@ -25,8 +25,8 @@ const Contact = () => {
             <Helmet>
                 <title>Huzaifa Portfolio - Contact Page</title>
             </Helmet>
-            <div className={`flex flex-row justify-center ${homeClass} md:h-[100vh]`}>
-                <Header custom4={'text-[#FA6136]'} isDarkTheme={isDarkTheme} onClick={toggleTheme} />
+            <div className={`flex flex-row justify-center ${homeClass}`}>
+            <Header isDarkTheme={isDarkTheme} custom4={"text-[#FA6136]"} onClick={toggleTheme} />
                 <div className='max-w-[1500px] pt-24 pb-8'>
                     <h1 className={`text-center tracking-wider text-6xl pb-6 font-black animate__animated animate__backInRight ${textClass}`} >Contact Me</h1>
                     <form className={`mt-14 flex flex-col bgForm bg-contain  rounded-2xl py-10 px-12  animate__animated animate__zoomInDown`}>

@@ -72,7 +72,7 @@ const Home = () => {
                         <p className={`md:w-[420px]   ${textClass}`}>
                             I'm a beginning Web Developer.I’m presently wanted to being involved in an organization that believes in gaining a competitive edge and giving back to the community.
                         </p>
-                        <div className="flex justify-around mt-8 animate__animated animate__zoomInDown mb-8">
+                        <div className="flex justify-around mt-8 animate__animated animate__zoomInDown mb-8 max-w-[400px]">
                             <div className="h-[40px] w-[40px] rounded-full hover:text-black hover:bg-[#FC6731] hover:shadow-2xl hover:shadow-[#FC6731] outline flex justify-center place-items-center text-[#FC6731] outline-gray-300 hover:outline-none">
                                 <a href="https://www.linkedin.com/in/huzaifahabib-923215271" target="_blank">
                                     <LinkedInIcon fontSize="medium" />

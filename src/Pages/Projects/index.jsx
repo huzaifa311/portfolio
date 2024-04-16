@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { FlippingCard, Header, NativeCard } from '../../Components'
-import { Box, Grid } from '@mui/material';
 import styles from './index.module.css'
 import { Helmet } from 'react-helmet';
 const Projects = () => {
@@ -8,10 +7,10 @@ const Projects = () => {
     const clientProjects = [
         {
             img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1709595480/a8sef1rvwnobxus2vch8.mp4',
-            headingF: 'AI Website',
+            headingF: 'Toolbelts',
             headingB: 'Toolbelts Website',
             para: 'Client Projects',
-            hostingUrl: 'https://ai-website-rosy.vercel.app/',
+            hostingUrl: 'https://lively-pothos-8b74fa.netlify.app/',
             // sourceCode: 'https://github.com/huzaifa311/FrontendWhatsapp'
         },
         {
@@ -20,6 +19,22 @@ const Projects = () => {
             headingB: 'Safe Behavorial DNA',
             para: 'Client Projects',
             hostingUrl: 'https://safety-espanol-main.vercel.app/',
+            // sourceCode: 'https://github.com/huzaifa311/FrontendWhatsapp'
+        },
+        {
+            img: 'https://res.cloudinary.com/dqh1f3r2w/video/upload/v1713308581/jpduj9qyitenb4c8uso9.mp4',
+            headingF: 'Real Estate Website',
+            headingB: 'Real Estate Website',
+            para: 'Client Projects',
+            hostingUrl: 'https://main--heartfelt-gaufre-941880.netlify.app/',
+            // sourceCode: 'https://github.com/huzaifa311/FrontendWhatsapp'
+        },
+        {
+            img: 'https://res.cloudinary.com/dqh1f3r2w/video/upload/v1713308254/v7d0lcighjjxh0subd80.mp4',
+            headingF: 'Website for Artists',
+            headingB: 'Artist',
+            para: 'Client Projects',
+            hostingUrl: 'https://warm-muffin-369a55.netlify.app/',
             // sourceCode: 'https://github.com/huzaifa311/FrontendWhatsapp'
         },
     ]
@@ -214,38 +229,43 @@ const Projects = () => {
     };
     const homeClass = isDarkTheme ? "light" : "wrapper";
     const textClass = isDarkTheme ? "text-black " : styles.bgH;
-    const subHeading = isDarkTheme ? "text-black md:pl-20 md:w-screen text-4xl font-semibold" : "text-white md:pl-20 md:w-screen text-4xl font-semibold"
+    const subHeading = isDarkTheme ? "text-black md:w-screen text-4xl font-semibold" : "text-white md:w-screen text-4xl font-semibold"
     return (
         <>
             <Helmet>
                 <title>Huzaifa Portfolio - Projects Page</title>
             </Helmet>
-            <div className={`md:flex md:justify-center ${homeClass}`}>
-                <Header custom3={'text-[#FA6136]'} onClick={toggleTheme} />
-                <div className='max-w-[1800px] pt-24 overflow-hidden'>
+            <div className={`md:flex md:justify-center ${homeClass} px-[2vw] md:px-16`}>
+                <Header isDarkTheme={isDarkTheme} custom3={"text-[#FA6136]"} onClick={toggleTheme} />
+                <div className='max-w-[1400px] pt-24 overflow-hidden'>
+
                     <h1 className={`text-center tracking-wider text-6xl py-8 font-black animate__animated animate__backInRight ${textClass}`} >Projects</h1>
-                    {/* <Box className="px-5 my-5"> */}
-                    {/* <Grid container columnSpacing={2} rowSpacing={2}> */}
-                    <h1 className={`${subHeading} `}>Client Projects</h1>
-                    <div className='flex flex-wrap justify-around xl:gap-11 xl:px-8'>
+
+                    <h1 className={`${subHeading} mb-5`}>Client Projects</h1>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-4'>
                         {clientProjects.map((project, i) => <FlippingCard key={i} project={project} />)}
                     </div>
-                    <h1 className={`${subHeading} `}>Mern Projects</h1>
-                    <div className='flex flex-wrap justify-around xl:gap-11 xl:px-8'>
+
+                    <h1 className={`${subHeading} mb-5 mt-10`}>Mern Projects</h1>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-4'>
                         {mernProjects.map((project, i) => <FlippingCard key={i} project={project} />)}
                     </div>
-                    <h1 className={`${subHeading} mt-10`}>React Projects</h1>
-                    <div className='flex flex-wrap justify-around xl:gap-11 xl:px-8'>
+
+                    <h1 className={`${subHeading} mb-5 mt-10`}>React Projects</h1>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-4'>
                         {reactProjects.map((project, i) => <FlippingCard key={i} project={project} />)}
                     </div>
-                    <h1 className={`text-white md:pl-16 md:w-screen text-4xl font-semibold mt-10`}>React Native Projects</h1>
-                    <NativeCard img={'https://firebasestorage.googleapis.com/v0/b/react-blog-42ef4.appspot.com/o/Android%20Emulator%20-%20Pixel_7_Pro_API_30_5554%202023-12-01%2000-12-37.mp4?alt=media&token=2f73b35d-b006-4cb7-9474-7815214383be'} headingF={'React Native Instagram Clone'} headingB={'Instagram Clone in React Native'} />
-                    <h1 className={`${subHeading} mt-10`}>HTML, CSS & Javascript</h1>
-                    <div className='flex flex-wrap justify-around xl:gap-11 xl:px-8'>
+
+                    <h1 className={`text-white md:w-screen text-4xl font-semibold mt-10 mb-5`}>React Native Projects</h1>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-4'>
+                        <NativeCard img={'https://firebasestorage.googleapis.com/v0/b/react-blog-42ef4.appspot.com/o/Android%20Emulator%20-%20Pixel_7_Pro_API_30_5554%202023-12-01%2000-12-37.mp4?alt=media&token=2f73b35d-b006-4cb7-9474-7815214383be'} headingF={'React Native Instagram Clone'} headingB={'Instagram Clone in React Native'} />
+                    </div>
+
+                    <h1 className={`${subHeading} mb-5 mt-10`}>HTML, CSS & Javascript</h1>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-4'>
                         {htmlCssJs.map((project, i) => <FlippingCard key={i} project={project} />)}
                     </div>
-                    {/* </Grid> */}
-                    {/* </Box> */}
+
                 </div>
             </div>
         </>

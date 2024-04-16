@@ -4,7 +4,7 @@ import './index.css'
 const FlippingCard = ({ project }) => {
     return (
         <>
-            <div className="card1 w-[350px] h-[200px] items-center flex rounded-[20px] m-[20px] relative animate__animated animate__fadeInUpBig">
+            <div className="card1 h-[250px] items-center flex rounded-[20px] relative animate__animated animate__fadeInUpBig">
                 <div className="face front">
                     <video autoPlay muted loop>
                         <source src={project?.img} />

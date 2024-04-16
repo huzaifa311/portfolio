@@ -4,7 +4,7 @@ import './index.css'
 const NativeCard = ({ img, headingF, headingB,  para, hostingUrl}) => {
     return (
         <>
-            <div className="card1 w-[250px] h-[450px] items-center flex rounded-[20px] m-[20px] relative animate__animated animate__fadeInUpBig md:ml-16">
+            <div className="card1 h-[450px] items-center flex rounded-[20px] relative animate__animated animate__fadeInUpBig ">
                 <div className="face front">
                     <video autoPlay muted loop>
                         <source src={img} />
