@@ -6,12 +6,18 @@ const Projects = () => {
 
     const clientProjects = [
         {
+            img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1716590817/e8kuko2sn9lrlchzytqj.mp4',
+            headingF: 'Event Rush',
+            headingB: 'Event Rush Website',
+            para: 'Client Projects',
+            hostingUrl: 'https://dev-muh-git-main-jhs-projects-3a7b2631.vercel.app/',
+        },
+        {
             img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1709595480/a8sef1rvwnobxus2vch8.mp4',
             headingF: 'Toolbelts',
             headingB: 'Toolbelts Website',
             para: 'Client Projects',
             hostingUrl: 'https://lively-pothos-8b74fa.netlify.app/',
-            // sourceCode: 'https://github.com/huzaifa311/FrontendWhatsapp'
         },
         {
             img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1709594909/Safe_Behavioral_DNA_Prueba_de_seguridad_laboral_-_Google_Chrome_2024-03-05_04-24-01_quphvd.mp4',
@@ -19,7 +25,6 @@ const Projects = () => {
             headingB: 'Safe Behavorial DNA',
             para: 'Client Projects',
             hostingUrl: 'https://safety-espanol-main.vercel.app/',
-            // sourceCode: 'https://github.com/huzaifa311/FrontendWhatsapp'
         },
         {
             img: 'https://res.cloudinary.com/dqh1f3r2w/video/upload/v1713308581/jpduj9qyitenb4c8uso9.mp4',
@@ -27,7 +32,6 @@ const Projects = () => {
             headingB: 'Real Estate Website',
             para: 'Client Projects',
             hostingUrl: 'https://main--heartfelt-gaufre-941880.netlify.app/',
-            // sourceCode: 'https://github.com/huzaifa311/FrontendWhatsapp'
         },
         {
             img: 'https://res.cloudinary.com/dqh1f3r2w/video/upload/v1713308254/v7d0lcighjjxh0subd80.mp4',
@@ -35,7 +39,6 @@ const Projects = () => {
             headingB: 'Artist',
             para: 'Client Projects',
             hostingUrl: 'https://warm-muffin-369a55.netlify.app/',
-            // sourceCode: 'https://github.com/huzaifa311/FrontendWhatsapp'
         },
     ]
 
@@ -230,6 +233,7 @@ const Projects = () => {
     const homeClass = isDarkTheme ? "light" : "wrapper";
     const textClass = isDarkTheme ? "text-black " : styles.bgH;
     const subHeading = isDarkTheme ? "text-black md:w-screen text-4xl font-semibold" : "text-white md:w-screen text-4xl font-semibold"
+    const gridLi = `grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-4`
     return (
         <>
             <Helmet>
@@ -242,27 +246,27 @@ const Projects = () => {
                     <h1 className={`text-center tracking-wider text-6xl py-8 font-black animate__animated animate__backInRight ${textClass}`} >Projects</h1>
 
                     <h1 className={`${subHeading} mb-5`}>Client Projects</h1>
-                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-4'>
+                    <div className={gridLi}>
                         {clientProjects.map((project, i) => <FlippingCard key={i} project={project} />)}
                     </div>
 
                     <h1 className={`${subHeading} mb-5 mt-10`}>Mern Projects</h1>
-                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-4'>
+                    <div className={gridLi}>
                         {mernProjects.map((project, i) => <FlippingCard key={i} project={project} />)}
                     </div>
 
                     <h1 className={`${subHeading} mb-5 mt-10`}>React Projects</h1>
-                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-4'>
+                    <div className={gridLi}>
                         {reactProjects.map((project, i) => <FlippingCard key={i} project={project} />)}
                     </div>
 
                     <h1 className={`text-white md:w-screen text-4xl font-semibold mt-10 mb-5`}>React Native Projects</h1>
-                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-4'>
+                    <div className={gridLi}>
                         <NativeCard img={'https://firebasestorage.googleapis.com/v0/b/react-blog-42ef4.appspot.com/o/Android%20Emulator%20-%20Pixel_7_Pro_API_30_5554%202023-12-01%2000-12-37.mp4?alt=media&token=2f73b35d-b006-4cb7-9474-7815214383be'} headingF={'React Native Instagram Clone'} headingB={'Instagram Clone in React Native'} />
                     </div>
 
                     <h1 className={`${subHeading} mb-5 mt-10`}>HTML, CSS & Javascript</h1>
-                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-4'>
+                    <div className={gridLi}>
                         {htmlCssJs.map((project, i) => <FlippingCard key={i} project={project} />)}
                     </div>
 
