@@ -6,11 +6,25 @@ const Projects = () => {
 
     const clientProjects = [
         {
+            img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1721946698/txiectlytwsuelqvwana.mp4',
+            headingF: 'Baggage Claimed',
+            headingB: 'Luggage Website',
+            para: 'Luggage handling Project',
+            hostingUrl: 'https://delicate-gnome-666e0a.netlify.app/',
+        },
+        {
             img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1716590817/e8kuko2sn9lrlchzytqj.mp4',
             headingF: 'Event Rush',
             headingB: 'Event Rush Website',
             para: 'Client Projects',
             hostingUrl: 'https://dev-muh-git-main-jhs-projects-3a7b2631.vercel.app/',
+        },
+        {
+            img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1721947123/dv8wr9qznjor3wfrxuly.mp4',
+            headingF: 'Wandk Web',
+            headingB: 'Company Portfolio',
+            para: 'Client Projects',
+            hostingUrl: 'https://wandktech.com/',
         },
         {
             img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1709595480/a8sef1rvwnobxus2vch8.mp4',
@@ -33,13 +47,13 @@ const Projects = () => {
             para: 'Client Projects',
             hostingUrl: 'https://main--heartfelt-gaufre-941880.netlify.app/',
         },
-        {
+        /* {
             img: 'https://res.cloudinary.com/dqh1f3r2w/video/upload/v1713308254/v7d0lcighjjxh0subd80.mp4',
             headingF: 'Website for Artists',
             headingB: 'Artist',
             para: 'Client Projects',
             hostingUrl: 'https://warm-muffin-369a55.netlify.app/',
-        },
+        }, */
     ]
 
     const mernProjects = [
@@ -88,14 +102,14 @@ const Projects = () => {
             sourceCode: "https://github.com/huzaifa311/portfolio"
         },
 
-        {
+       /*  {
             img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1701103758/k1wrsbktxaaihwifuclh.mp4',
             headingF: 'Blogging',
             headingB: 'Blogging Website',
             para: 'Blog App using React, Tailwind & FireBase',
             hostingUrl: 'https://blog-react-tau.vercel.app/',
             sourceCode: "https://github.com/huzaifa311/Blog-React"
-        },
+        }, */
 
         {
             img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1701103440/kj0yot93icnfrskswofn.mp4',
@@ -106,14 +120,14 @@ const Projects = () => {
             sourceCode: "https://github.com/huzaifa311/LogisticsWeb"
         },
 
-        {
+      /*   {
             img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1701103387/qsunnmzzffjfwax1fxwv.mp4',
             headingF: 'Portfolio Website',
             headingB: 'My Portfolio',
             para: 'Portfolio Website Using React Js',
             hostingUrl: 'https://portfolio-react-henna-ten.vercel.app/',
             sourceCode: "https://github.com/huzaifa311/Portfolio-React"
-        },
+        }, */
 
         {
             img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1701102584/ldsnrjucsahqcza4uhnf.mp4',
@@ -142,17 +156,17 @@ const Projects = () => {
             sourceCode: "https://github.com/huzaifa311/Github-API"
         },
 
-        {
+        /* {
             img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1701102582/rucuwlfmantlbdqzrkil.mp4',
             headingF: 'REACT TODO',
             headingB: 'REACT TODO',
             para: 'TODO WEBSITE USING REACTJS',
             hostingUrl: "https://todo-react-red-ten.vercel.app/",
             sourceCode: "https://github.com/huzaifa311/todoReact"
-        },
+        }, */
     ]
 
-    const htmlCssJs = [
+    /* const htmlCssJs = [
 
         {
             img: 'https://res.cloudinary.com/diaelwaqe/video/upload/v1701104052/uqf8gpr9vhnnzqh3poqs.mp4',
@@ -225,7 +239,7 @@ const Projects = () => {
             hostingUrl: "https://huzaifa311.github.io/TripAdvisor/",
             sourceCode: "https://github.com/huzaifa311/TripAdvisor"
         },
-    ]
+    ] */
     const [isDarkTheme, setDarkTheme] = useState(false);
     const toggleTheme = () => {
         setDarkTheme(!isDarkTheme);
@@ -265,10 +279,10 @@ const Projects = () => {
                         <NativeCard img={'https://firebasestorage.googleapis.com/v0/b/react-blog-42ef4.appspot.com/o/Android%20Emulator%20-%20Pixel_7_Pro_API_30_5554%202023-12-01%2000-12-37.mp4?alt=media&token=2f73b35d-b006-4cb7-9474-7815214383be'} headingF={'React Native Instagram Clone'} headingB={'Instagram Clone in React Native'} />
                     </div>
 
-                    <h1 className={`${subHeading} mb-5 mt-10`}>HTML, CSS & Javascript</h1>
+                    {/* <h1 className={`${subHeading} mb-5 mt-10`}>HTML, CSS & Javascript</h1>
                     <div className={gridLi}>
                         {htmlCssJs.map((project, i) => <FlippingCard key={i} project={project} />)}
-                    </div>
+                    </div> */}
 
                 </div>
             </div>
